@@ -3,11 +3,13 @@ import plotly.express as px
 
 
 def encode_date(row):
-    return f"{row['Year']}-{row['Month']}-{row['Day']}"
+    return f"{row['Month']}/{row['Day']}/{row['Year']}"
 
 
 def show_graph(data: pd.DataFrame):
     data = data.copy()
+    data.sort_values(by=['Year', 'Month', 'Day'], inplace=True)
+    data.reset_index(drop=True, inplace=True)
     data['Date'] = data.apply(encode_date, axis=1)
     fig = px.choropleth(data,
                         locations="State",
