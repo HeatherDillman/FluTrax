@@ -15,7 +15,7 @@ def validate_date(year: str, month: str, day: str):
 
 
 def update_info():
-    title = "Trend of Increasing Rate of FLu Hospitalizations For Patients"
+    title = "Trend of Increasing Rate of Flu Hospitalizations For Patients"
 
     # Update data
     states_df = pd.read_csv('us_states.csv')
