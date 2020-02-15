@@ -3,6 +3,7 @@ import pandas as pd
 from tkinter import *
 from PIL import Image, ImageTk
 import easygui
+from update_info import update_info
 
 
 class Window(Frame):
@@ -29,8 +30,7 @@ class Window(Frame):
         map_button.configure(background=button_background_color, foreground='white')
         map_button.place(x=60, y=400, width=120, height=50)
 
-        # TODO: change the command to the update command
-        update_button = Button(self, text='Update Data', command=easygui.enterbox)
+        update_button = Button(self, text='Update Data', command=update_info)
         update_button.configure(background=button_background_color, foreground='white')
         update_button.place(x=240, y=400, width=120, height=50)
 
