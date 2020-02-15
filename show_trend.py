@@ -30,6 +30,3 @@ def show_trend():
     plt.title("Trend of Increasing Rate of Flu Hospitalizations For Patients")
 
     plt.show()
-
-
-show_trend()

@@ -2,7 +2,7 @@ from map_view import show_graph
 import pandas as pd
 from tkinter import *
 from PIL import Image, ImageTk
-import easygui
+from show_trend import show_trend
 from update_info import update_info
 
 
@@ -34,8 +34,7 @@ class Window(Frame):
         update_button.configure(background=button_background_color, foreground='white')
         update_button.place(x=240, y=400, width=120, height=50)
 
-        # TODO: change command
-        trend_button = Button(self, text='Show Trend', command=easygui.enterbox)
+        trend_button = Button(self, text='Show Trend', command=show_trend)
         trend_button.configure(background=button_background_color, foreground='white')
         trend_button.place(x=420, y=400, width=120, height=50)
 
