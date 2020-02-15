@@ -19,8 +19,6 @@ plt.xticks(dateIndex, date)
 
 plt.title("Trend of Increasing Rate of Flu Hospitalizations For Patients")
 
-plt.legend()
-
 plt.show()
 
 userDate = input("Do you want to update this data? If yes, type: y. If not, type: n\n")
@@ -87,7 +85,5 @@ plt.xlabel("Date")
 plt.xticks(dateIndex, date)
 
 plt.title("Increasing Rate of Flu Virus in Patients")
-
-plt.legend()
 
 plt.show()
